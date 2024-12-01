@@ -1,0 +1,70 @@
+* {
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Add styles here! */
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+p {
+  font-size: 1rem;
+}
+
+strong {
+  color: hsl(160deg, 100%, 30%);
+}
+
+.max-width-wrapper {
+  max-width: 30rem;
+  margin-inline: auto;
+  padding: 8px;
+}
+
+.intro-chunk,
+main {
+  margin-block: 24px;
+}
+
+main {
+  background-color: hsl(0deg, 0%, 30%);
+  border-top: 8px solid hsl(0deg, 0%, 40%);
+  margin-bottom: 0;
+  padding-block: 32px;
+}
+
+.card {
+  --padding: 24px;
+  background-color: hsl(0deg, 0%, 100%);
+  padding: var(--padding);
+  /* remove margin to keep text lined up */
+  margin-inline: calc(-1 * var(--padding));
+}
+
+.indented-heading {
+  background-color: hsl(45deg, 100%, 50%);
+  border-bottom: 8px solid hsl(45deg, 100%, 40%);
+  margin: 0;
+  margin-left: -16px;
+  padding: 8px 16px;
+  width: fit-content;
+}
+
+@media (min-width: 500px) {
+  /* I initially had this without a media query, but it broke the mobile layout */
+  .indented-heading {
+    margin-left: -24px;
+  }
+}
